@@ -4,21 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.min.css">
-    <title>Gulp</title>
+    <title>Hunger</title>
 </head>
 <body>
-    @@include('_header.html')
-    <main class="main">
-        <p class="img">
-            Hello
-        </p>
+    <header class="header">
+        <div class="content-container header__container">
+            <div class="nav-header-wrapper header__nav-header-wrapper">
+                <nav class="header-nav-left header__header-nav-left">
+                    <div class="header-nav header-nav-left__header-nav">
+                        <a href="#">Home</a>
+                    </div>
+                    <div class="header-nav header-nav-left__header-nav">
+                        <a href="#">About</a>
+                    </div>
+                    <div class="header-nav header-nav-left__header-nav">
+                        <a href="#">Team</a>
+                    </div>
+                    <div class="header-nav header-nav-left__header-nav">
+                        <a href="#">Booking</a>
+                    </div>
+                </nav>
 
-        <img src="./img/img.jpg" alt="">
-        <!-- <picture>
-            <source srcset="./img/img.webp">
-            <img src="./img/img.jpg" alt="">
-        </picture> -->
-    </main>
-    <script src="js/main.min.js"></script>
+                <div class="logo-wrapper nav-header-wrapper__logo-wrapper">
+                    <img class="logo-wrapper__logo" src="./img/logo.png" >
+                </div>
+
+                <nav class="header-nav-right header__header-nav-right">
+                    <div class="header-nav header-nav-right__header-nav">
+                        <a href="#">Menu</a>
+                    </div>
+                    <div class="header-nav header-nav-right__header-nav">
+                        <a href="#">Galerie</a>
+                    </div>
+                    <div class="header-nav header-nav-right__header-nav">
+                        <a href="#">Events</a>
+                    </div>
+                    <div class="header-nav header-nav-right__header-nav">
+                        <a href="#">Contact</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
