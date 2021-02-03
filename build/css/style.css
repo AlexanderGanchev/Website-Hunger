@@ -710,8 +710,11 @@ a {
   text-decoration: none;
 }
 
+.about {
+  height: 100vh;
+}
+
 .about__container {
-  padding-top: 100px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -729,10 +732,6 @@ a {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-}
-
-.about__headline {
-  padding-right: 50px;
 }
 
 .headline {
@@ -773,7 +772,7 @@ a {
 }
 
 .headline__text {
-  font-family: "OpenSans";
+  font-family: "OpenSans-Regular";
   font-size: 14px;
   line-height: 28px;
 }
@@ -786,6 +785,23 @@ a {
   position: absolute;
   top: 50%;
   left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 250px;
+  height: 250px;
+  border: 20px solid #fed600;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+  border-radius: 5px;
+}
+
+.picture__square_left {
+  position: absolute;
+  top: 50%;
+  left: 50px;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1212,6 +1228,44 @@ a {
 .humburger-menu__menu-wrapper span:nth-of-type(3) {
   top: -webkit-calc(50% + 6px);
   top: calc(50% + 6px);
+}
+
+.master {
+  height: 100vh;
+  background: url(../img/master-bg.jpg) no-repeat center/cover;
+}
+
+.master__caption {
+  padding-top: 25px;
+  font-family: "OpenSans-Bold";
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.master__container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.master p {
+  color: white;
 }
 
 @media (min-width: 768px) {
