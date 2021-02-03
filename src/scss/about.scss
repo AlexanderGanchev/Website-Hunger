@@ -1,0 +1,68 @@
+.about {
+  &__container {
+    padding-top: 100px;
+    @include flex(center, center, row);
+  }
+
+  &__headline {
+    padding-right: 50px;
+  }
+}
+
+.headline {
+  max-width: 600px;
+  width: 100%;
+  color: $black;
+  text-align: center;
+
+  &__title {
+    position: relative;
+    font-family: "Banny";
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 60px;
+      height: 5px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $yellow;
+      border-radius: 50px;
+    }
+  }
+
+  &__subtitle {
+    font-family: "OpenSans-Bold";
+    font-size: 18px;
+    padding-bottom: 25px;
+    line-height: 24px;
+  }
+
+  &__text {
+    font-family: "OpenSans";
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.picture {
+  position: relative;
+
+  &__square {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    height: 250px;
+    border: 20px solid $yellow;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 0px 100px rgba(0, 0, 0, 0.5));
+    border-radius: 5px;
+  }
+}
