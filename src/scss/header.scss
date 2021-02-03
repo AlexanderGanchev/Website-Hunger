@@ -1,10 +1,19 @@
 .header {
+  width: 100%;
+  position: absolute;
+
   &__nav-header-wrapper {
     @include flex(space-between, center, row);
+
+    @include tablet_md {
+      margin: 16px 0 0 16px;
+    }
   }
 
   &__header-nav-left,
   &__header-nav-right {
+    max-width: 535px;
+    width: 100%;
     position: relative;
     @include flex(space-between, center, row);
 
@@ -12,60 +21,85 @@
       content: "";
       position: absolute;
       bottom: 0;
-      max-width: 532px;
+      max-width: 535px;
       width: 100%;
       height: 1px;
-      // background-color: $lightGray;
-      background-color: red;
+      background-color: $lightGray;
+    }
+
+    @include tablet_md {
+      display: none;
     }
   }
-}
 
-.header-nav-left,
-.header-nav-right {
   &__header-nav {
+    width: 25%;
+    height: 100px;
     text-transform: uppercase;
     font-family: "OpenSans-Bold";
-    cursor: pointer;
-  }
-}
 
-.header-nav {
-  width: 133px;
-  height: 100px;
+    a {
+      width: 100%;
+      height: 100%;
+      @include flex(center, center, row);
 
-  a {
-    width: 100%;
-    height: 100%;
-    @include flex(center, center, row);
-    // color: white;
-
-    &:hover {
-      color: $yellow;
+      &:hover {
+        color: $yellow;
+        transition: 0.2s;
+        cursor: pointer;
+      }
     }
   }
-}
 
-.nav-header-wrapper {
-  // position: relative;
-
-  // &__logo-wrapper {
-  //   position: absolute;
-  //   top: 100px;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  // }
-}
-
-.logo-wrapper {
-  position: relative;
-  width: 150px;
-  // height: 150px;
+  &__logo-wrapper {
+    position: relative;
+    width: 150px;
+  }
 
   &__logo {
     position: absolute;
-    top: 45px;
+    width: 100%;
+    top: 50px;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @include tablet_md {
+      display: none;
+    }
+  }
+
+  &__humburger-menu {
+    @include tablet_md-min {
+      display: none;
+    }
+  }
+}
+
+.humburger-menu {
+  &__menu-wrapper {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $yellow;
+    cursor: pointer;
+
+    span {
+      width: 20px;
+      height: 2px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: $white;
+
+      &:nth-of-type(2) {
+        top: calc(50% - 6px);
+      }
+
+      &:nth-of-type(3) {
+        top: calc(50% + 6px);
+      }
+    }
   }
 }

@@ -4041,4 +4041,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   return S.noConflict = function (e) {
     return C.$ === S && (C.$ = Qt), e && C.jQuery === S && (C.jQuery = Yt), S;
   }, "undefined" == typeof e && (C.jQuery = C.$ = S), S;
-});
+}); // let logo = document.querySelectorAll('.logo-wrapper');
+// const rotationLogo = () => {
+//   classList.toggle('--open');
+// }
+// logo.removeEventListener("click", rotationLogo);
