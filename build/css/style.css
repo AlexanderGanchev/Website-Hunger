@@ -1248,6 +1248,16 @@ input {
   font-family: inherit;
 }
 
+.events {
+  height: 100vh;
+  background: url(./../img/specialties-bg.jpg);
+}
+
+.events__caption {
+  color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 30px;
+}
+
 .header {
   width: 100%;
   position: absolute;
@@ -1430,6 +1440,7 @@ input {
 }
 
 .menu__container {
+  padding: 100px 0 70px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1509,12 +1520,8 @@ input {
 }
 
 .menu__menu-wrapper {
-  max-width: 1265px;
+  max-width: 1270px;
   width: 100%;
-}
-
-.menu__menu-item {
-  width: 34%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1523,38 +1530,41 @@ input {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: space-between;
+  -webkit-align-items: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
+}
+
+.menu__menu-item-wrapper {
+  margin-right: 85px;
+}
+
+.menu__menu-item-wrapper:last-child {
+  margin-right: 0px;
 }
 
 .menu__menu-title {
+  display: inline;
   font-family: "Banny";
   font-size: 18px;
   text-transform: uppercase;
+  color: black;
+}
+
+.menu__menu-subtitle {
+  color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 30px;
 }
 
 .specialties {
   height: 100vh;
   background: url(../img/specialties-bg.jpg) no-repeat center/cover;
-}
-
-.specialties__caption {
-  padding-top: 25px;
-  font-family: "OpenSans-Bold";
-  line-height: 14px;
-  letter-spacing: 0.5em;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .specialties__container {
@@ -1579,6 +1589,15 @@ input {
 
 .specialties p {
   color: rgba(255, 255, 255, 0.9);
+}
+
+.caption {
+  padding-top: 25px;
+  font-family: "OpenSans-Bold";
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 @media (min-width: 768px) {

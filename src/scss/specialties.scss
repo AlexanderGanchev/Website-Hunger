@@ -2,15 +2,6 @@
   height: 100vh;
   background: url(../img/specialties-bg.jpg) no-repeat center/cover;
 
-  &__caption {
-    padding-top: 25px;
-    font-family: "OpenSans-Bold";
-    line-height: 14px;
-    letter-spacing: 0.5em;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
   &__container {
     @include flex(center, center, row);
   }
@@ -18,4 +9,13 @@
   p {
     color: $whiteText;
   }
+}
+
+.caption {
+  padding-top: 25px;
+  font-family: "OpenSans-Bold";
+  line-height: 14px;
+  letter-spacing: 0.5em;
+  text-align: center;
+  text-transform: uppercase;
 }

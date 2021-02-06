@@ -1,5 +1,6 @@
 .menu {
   &__container {
+    padding: 100px 0 70px 0;
     @include flex(center, center, column);
   }
 
@@ -31,19 +32,29 @@
   }
 
   &__menu-wrapper {
-    max-width: 1265px;
+    max-width: 1270px;
     width: 100%;
+    @include flex(center, space-between, row);
   }
 
-  &__menu-item {
-    width: 34%;
-    @include flex(center, center, row);
-    flex-wrap: wrap;
+  &__menu-item-wrapper {
+    margin-right: 85px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 
   &__menu-title {
+    display: inline;
     font-family: "Banny";
     font-size: 18px;
     text-transform: uppercase;
+    color: $black;
+  }
+
+  &__menu-subtitle {
+    color: $gray;
+    padding-bottom: 30px;
   }
 }
