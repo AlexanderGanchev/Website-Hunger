@@ -1,0 +1,5 @@
+.gallery {
+  &__container {
+    @include flex(center, space-between, row);
+  }
+}
