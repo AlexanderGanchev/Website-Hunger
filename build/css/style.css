@@ -1302,6 +1302,18 @@ input {
           flex-direction: row;
 }
 
+.gallery__img-wrapper {
+  width: 360px;
+  height: 360px;
+}
+
+.gallery__img-wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   width: 100%;
   position: absolute;
