@@ -1249,13 +1249,37 @@ input {
 }
 
 .events {
-  height: 100vh;
   background: url(./../img/specialties-bg.jpg);
 }
 
 .events__caption {
   color: rgba(255, 255, 255, 0.9);
-  padding-bottom: 30px;
+}
+
+.events__picture-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: space-between;
+  -webkit-align-items: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.events__timetable {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.9);
+  padding-bottom: 35px;
 }
 
 .header {

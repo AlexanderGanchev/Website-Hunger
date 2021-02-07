@@ -1,9 +1,17 @@
 .events {
-  height: 100vh;
   background: url(./../img/specialties-bg.jpg);
 
   &__caption {
     color: $whiteText;
-    padding-bottom: 30px;
+  }
+
+  &__picture-wrapper {
+    @include flex(center, space-between, row);
+  }
+
+  &__timetable {
+    text-align: center;
+    color: $whiteText;
+    padding-bottom: 35px;
   }
 }
