@@ -1,5 +1,5 @@
 .about {
-  height: 100vh;
+  padding: 100px 0;
 
   &__container {
     @include flex(center, center, row);
@@ -36,8 +36,8 @@
   &__subtitle {
     font-family: "OpenSans-Bold";
     font-size: 18px;
-    padding-bottom: 25px;
     line-height: 24px;
+    padding-bottom: 50px;
   }
 
   &__text {

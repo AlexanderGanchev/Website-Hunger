@@ -29,6 +29,11 @@
     font-family: "OpenSans-Bold";
     text-transform: uppercase;
     cursor: pointer;
+
+    &:hover {
+      color: $yellow;
+      transition: 0.2s;
+    }
   }
 
   &__menu-wrapper {

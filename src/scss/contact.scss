@@ -1,0 +1,46 @@
+.contact {
+  padding: 100px 0;
+
+  &__container {
+    @include flex(center, center, column);
+  }
+
+  &__form-wrapper {
+    max-width: 1280px;
+    width: 100%;
+    height: 190px;
+    @include flex(space-between, center, row);
+    flex-wrap: wrap;
+  }
+
+  &__input-wrapper {
+    width: 33%;
+    margin-bottom: 10px;
+
+    &:nth-child(4) {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__info-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
+  }
+
+  &__info {
+    @include flex(center, center, row);
+    color: $gray;
+
+    p {
+      font-family: "OpenSans-Bold";
+    }
+  }
+
+  &__button {
+    width: 640px;
+  }
+}
