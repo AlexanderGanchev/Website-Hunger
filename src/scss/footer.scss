@@ -1,0 +1,17 @@
+.footer {
+  background-color: #0f0f0f;
+  padding: 25px 0;
+
+  @include desktop {
+    padding: 15px 10px;
+  }
+
+  &__container {
+    font-family: "OpenSans-Bold";
+    text-align: center;
+  }
+
+  &__protection {
+    color: $whiteText;
+  }
+}
